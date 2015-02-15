@@ -28,6 +28,7 @@ var bio = {
 		$("#header").append(formattedPicture + formattedMsg);
 		$("#main").append(internationalizeButton);
 		$("#mapDiv").append(googleMap);
+		$("#footerContacts").append(formattedMobile + formattedEmail + formattedGithub + formattedTwitter + formattedLocation);
 	}
 };
 
