@@ -137,13 +137,13 @@ var education = {
 		}
 	},
 	"displayOnline": function() {
-		$('#education').append(HTMLonlineClasses);
+		$('#education').append(HTMLonlineClasses + HTMLschoolStart);
 		for (course in education.onlineCourses) {
 			var onlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
 			var onlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
 			var onlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
 			var onlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
-			$('#education').append(onlineTitle + onlineSchool + onlineDates + onlineURL);
+			$('.education-entry:last').append(onlineTitle + onlineSchool + onlineDates + onlineURL);
 		}
 	}
 };
